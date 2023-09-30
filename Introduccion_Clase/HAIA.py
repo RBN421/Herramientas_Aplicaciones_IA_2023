@@ -5,9 +5,9 @@ class HyAIA:
     def __init__(self, df):
         self.data = df
         self.columns = df.columns
-        #self.data_binarios, self.binarios_columns = get_binarios(df)
-        #self.data_cuantitativos, self.cuantitativos_columns = get_cuantitativos(df)
-        #self.data_categoricos, self.categoricos_columns = get_categoricos(df)
+        self.data_binarios, self.binarios_columns = self.get_binarios()
+        self.data_cuantitativos, self.cuantitativos_columns = self.get_cuantitativos()
+        self.data_categoricos, self.categoricos_columns = self.get_categoricos()
         
     ##% Métodos para Análisis de Datos 
     #Método para obtener las columnas y dataframe binarios
